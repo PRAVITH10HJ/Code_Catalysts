@@ -1,0 +1,149 @@
+/* 🌟 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* 🌟 Main Container */
+.container {
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Title */
+.title {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 🌟 Upload Section */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-label {
+  width: 100%;
+  padding: 20px;
+  border: 3px dashed #3182ce;
+  border-radius: 12px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.upload-label:hover {
+  background: #ebf4ff;
+  border-color: #2b6cb0;
+}
+
+.upload-text {
+  color: #555;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* 🌟 File Input (Hidden) */
+.file-input {
+  display: none;
+}
+
+/* 🌟 Image Preview */
+.image-preview {
+  margin-top: 20px;
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-preview:hover {
+  transform: scale(1.05);
+}
+
+/* 🌟 Upload Button */
+.upload-button {
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #3182ce, #2b6cb0);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.upload-button:disabled {
+  background: #cbd5e0;
+  cursor: not-allowed;
+}
+
+.upload-button:hover:enabled {
+  background: linear-gradient(135deg, #2b6cb0, #1a365d);
+  transform: scale(1.05);
+}
+
+/* 🌟 Download Link */
+.download-link {
+  margin-top: 25px;
+  color: #3182ce;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-link:hover {
+  color: #2b6cb0;
+  transform: scale(1.1);
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .upload-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
